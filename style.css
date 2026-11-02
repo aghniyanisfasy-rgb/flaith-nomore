@@ -1,0 +1,189 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+/* Reset & Basis Tampilan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #FAF2A1; /* Latar Belakang Utama Real Butter Yellow */
+    color: #3D332A;
+    line-height: 1.6;
+}
+
+/* Header atas */
+header {
+    background-color: #FAF2A1;
+    color: #2D2520;
+    padding: 24px 15px 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2D2520;
+    text-transform: uppercase;
+}
+
+/* Menu Navigasi Horizontal 1 Baris */
+nav {
+    background-color: #FAF2A1;
+    text-align: center;
+    padding: 10px 5px 20px;
+    white-space: nowrap; /* Memaksa menu tetap sejajar 1 baris */
+}
+
+nav a {
+    color: #4A3E33;
+    text-decoration: none;
+    margin: 0 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #F0E275;
+    color: #2D2520;
+}
+
+/* Kotak Konten Utama */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto 35px;
+    background: #FFFDF2; /* Warna krem mentega sangat lembut */
+    padding: 24px 20px;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(180, 160, 60, 0.2);
+    border: 1.5px solid #F0E275;
+}
+
+.container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    color: #2D2520;
+    border-bottom: 2px solid #F0E275;
+    padding-bottom: 8px;
+}
+
+.container ul {
+    list-style-type: square;
+    color: #4A3E33;
+}
+
+.container li {
+    margin-bottom: 6px;
+}
+
+/* Grid Kartu Produk Plat Nomor */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1.5px solid #F0E275;
+    border-radius: 20px;
+    padding: 16px;
+    background: #FFFDF2;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(240, 226, 117, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    background-color: #F7EA88;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: #2D2520;
+}
+
+.card p {
+    font-size: 0.88rem;
+    color: #5C4E40;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: 600;
+    color: #2D2520;
+    font-size: 1.05rem;
+}
+
+/* Isian Form Pemesanan */
+form label {
+    display: block;
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #4A3E33;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-top: 6px;
+    border: 1.5px solid #F0E275;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    background-color: #FFFDF2;
+    color: #3D332A;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #D9C94E;
+    background-color: #FFFFFF;
+}
+
+/* Tombol Kirim Pesan */
+button {
+    background-color: #F0E275;
+    color: #2D2520;
+    border: none;
+    padding: 14px 20px;
+    margin-top: 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(240, 226, 117, 0.4);
+}
+
+button:hover {
+    background-color: #E6D660;
+}
+
+/* Footer Bawah Rapi & Tegas */
+footer {
+    text-align: center;
+    padding: 22px 15px;
+    background-color: #3D332A; /* Cokelat Tua Estetik */
+    color: #FAF2A1; /* Tulisan Kuning Butter Terang */
+    margin-top: 40px;
+    font-size: 0.82rem;
+    border-top: 3px solid #F0E275;
+    width: 100%;
+}
